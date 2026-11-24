@@ -43,9 +43,9 @@ proyecto-ciencia-datos/
 ├── requirements.txt
 ├── data/raw/                 # CSV locales, no versionados
 ├── notebooks/
-│   └── diagnostico_calidad.ipynb
+│   └── data_quality.ipynb
 └── reports/
-    └── informe_diagnostico.md
+    └── data_quality.md
 ```
 
 ## Preparar y ejecutar
@@ -66,12 +66,12 @@ jupyter lab
 
 Si PowerShell bloquea la activación del entorno, ejecute antes `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`. En Linux o macOS use `source .venv/bin/activate`.
 
-Abra `notebooks/diagnostico_calidad.ipynb`, seleccione el kernel del entorno `.venv` y ejecute **Run All**. Asegúrese de que los cinco CSV estén en `data/raw/`. La ejecución completa tarda menos de un minuto.
+Abra `notebooks/data_quality.ipynb`, seleccione el kernel del entorno `.venv` y ejecute **Run All**. Asegúrese de que los cinco CSV estén en `data/raw/`. La ejecución completa tarda menos de un minuto.
 
 Alternativa sin abrir Jupyter:
 
 ```bash
-jupyter nbconvert --to notebook --execute --inplace notebooks/diagnostico_calidad.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/data_quality.ipynb
 ```
 
 ## Dependencias
@@ -94,9 +94,9 @@ Probado con Python 3.13.
 | `aisles.csv` | 134 | 2 | Sin nulos; incluye la categoría `missing` |
 | `departments.csv` | 21 | 2 | Sin nulos; incluye la categoría `missing` |
 
-No hay claves huérfanas ni valores fuera de rango. El detalle está en [`reports/informe_diagnostico.md`](reports/informe_diagnostico.md).
+No hay claves huérfanas ni valores fuera de rango. El detalle está en [`reports/data_quality.md`](reports/data_quality.md).
 
 ## Productos
 
 - Notebook ejecutable con inspección estructural y controles iniciales de calidad.
-- Informe técnico con resultados, interpretación, limitaciones y acciones propuestas: [`reports/informe_diagnostico.md`](reports/informe_diagnostico.md).
+- Informe técnico con resultados, interpretación, limitaciones y acciones propuestas: [`reports/data_quality.md`](reports/data_quality.md).
