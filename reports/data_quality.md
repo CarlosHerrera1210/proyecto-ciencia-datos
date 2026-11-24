@@ -26,7 +26,7 @@ Las claves `order_id`, `product_id`, `aisle_id` y `department_id` relacionan las
 
 ## 3. Resultados de la inspección estructural
 
-Resultados obtenidos con `shape`, `dtypes`, `info()` y `describe()` en `notebooks/diagnostico_calidad.ipynb`.
+Resultados obtenidos con `shape`, `dtypes`, `info()` y `describe()` en `notebooks/data_quality.ipynb`.
 
 | Dataset | Filas | Columnas | Tipos de datos | Observaciones |
 |---|---:|---:|---|---|
@@ -86,4 +86,4 @@ En esta actividad las acciones solo se proponen; los datos originales no se modi
 
 Los cinco archivos están en buenas condiciones para continuar con el proyecto. Las claves son íntegras, los rangos son válidos y casi todos los nulos tienen una explicación: primer pedido, límite del carrito o productos sin clasificar. El único error real son las 15 filas duplicadas de pedidos, que deben eliminarse antes de analizar el horario de compra. Para la recompra, `reordered` está completa y sin valores inválidos. Tras una limpieza ligera, los datos permiten responder la pregunta analítica, siempre que se respete la granularidad de cada tabla: una fila de `order_products` es un artículo, no un pedido ni un cliente.
 
-Para reproducir los resultados, ejecute `notebooks/diagnostico_calidad.ipynb` siguiendo las instrucciones del `README.md`.
+Para reproducir los resultados, ejecute `notebooks/data_quality.ipynb` siguiendo las instrucciones del `README.md`.

@@ -1,0 +1,5 @@
+time_slot,pedidos,clientes,% pedidos
+madrugada (0-5 h),8838,7600,1.8
+mañana (6-11 h),158788,84200,33.2
+tarde (12-17 h),226503,112288,47.3
+noche (18-23 h),84823,55829,17.7
